@@ -1,0 +1,29 @@
+ls -la /
+
+total 632
+drwxr-xr-x  1 root root    512 Mar 14 18:45 .
+drwxr-xr-x  1 root root    512 Mar 14 18:45 ..
+lrwxrwxrwx  1 root root      7 Apr 22  2024 bin -> usr/bin
+drwxr-xr-x  1 root root    512 Feb 26  2024 bin.usr-is-merged
+drwxr-xr-x  1 root root    512 Apr 22  2024 boot
+drwxr-xr-x  1 root root    512 Apr  4 21:29 dev
+drwxr-xr-x  1 root root    512 Apr  4 21:29 etc
+drwxr-xr-x  1 root root    512 Mar 14 18:45 home
+-rwxr-xr-x  1 root root 644432 Dec 16  2022 init
+lrwxrwxrwx  1 root root      7 Apr 22  2024 lib -> usr/lib
+drwxr-xr-x  1 root root    512 Apr  8  2024 lib.usr-is-merged
+lrwxrwxrwx  1 root root      9 Apr 22  2024 lib64 -> usr/lib64
+drwxr-xr-x  1 root root    512 Jan  6  2025 media
+drwxr-xr-x  1 root root    512 Mar 14 18:45 mnt
+drwxr-xr-x  1 root root    512 Jan  6  2025 opt
+dr-xr-xr-x  9 root root      0 Apr  4 21:29 proc
+drwx------  1 root root    512 Jan  6  2025 root
+drwxr-xr-x  1 root root    512 Apr  4 21:29 run
+lrwxrwxrwx  1 root root      8 Apr 22  2024 sbin -> usr/sbin
+drwxr-xr-x  1 root root    512 Mar 31  2024 sbin.usr-is-merged
+drwxr-xr-x  1 root root    512 Oct 11  2024 snap
+drwxr-xr-x  1 root root    512 Jan  6  2025 srv
+dr-xr-xr-x 12 root root      0 Apr  4 21:29 sys
+drwxrwxrwt  1 root root    512 Mar 17 17:11 tmp
+drwxr-xr-x  1 root root    512 Jan  6  2025 usr
+drwxr-xr-x  1 root root    512 Jan  6  2025 var
