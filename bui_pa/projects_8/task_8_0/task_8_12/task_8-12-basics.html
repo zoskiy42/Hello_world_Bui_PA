@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Селекторы CSS — практика</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fc;
+            margin: 20px;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        #title {
+            color: #1e466e;
+            text-align: center;
+            border-bottom: 3px solid #ff9800;
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: #fff3e0;
+            padding: 12px;
+            border-left: 6px solid #ff9800;
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            letter-spacing: 0.5px;
+        }
+
+        .box.highlight {
+            background-color: #ffe6b3;
+            border: 1px solid #ff9800;
+            font-weight: bold;
+        }
+
+        .box.highlight.large {
+            font-size: 1.4rem;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .box {
+            background-color: #e9ecef;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border: 1px solid #ced4da;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="title">Практика с CSS-селекторами</h1>
+
+    <p>Обычный параграф без класса. Здесь просто текст для примера.</p>
+
+    <p class="lead">Этот параграф имеет класс "lead". Он выделен более жирным шрифтом и имеет левую границу.</p>
+
+    <div class="box">Обычный блок с классом "box"</div>
+    <div class="box highlight">Блок с двумя классами: "box" и "highlight"</div>
+    <div class="box highlight large">Блок с тремя классами: "box", "highlight" и "large"</div>
+
+</body>
+</html>

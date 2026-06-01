@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анализ успеваемости студентов</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2>📊 Аналитика</h2>
+            <nav>
+                <button data-action="mean" class="stat-btn">📈 Средний балл</button>
+                <button data-action="median" class="stat-btn">📉 Медиана</button>
+                <button data-action="count" class="stat-btn">🔢 Количество оценок</button>
+                <button data-action="min" class="stat-btn">⬇️ Минимум</button>
+                <button data-action="max" class="stat-btn">⬆️ Максимум</button>
+                <button data-action="histogram" class="chart-btn">📊 Гистограмма</button>
+                <button data-action="barchart" class="chart-btn">📊 Средний балл по предметам</button>
+                <button data-action="clear" class="clear-btn">🗑️ Очистить</button>
+            </nav>
+            <footer>
+                <p>© 2025 | Учебный проект</p>
+            </footer>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h1>Анализ успеваемости студентов</h1>
+                <p>Нажмите на кнопку, чтобы получить статистику или построить график</p>
+            </header>
+            <div id="result-area" class="result-card">
+                <div class="placeholder">
+                    ✨ Здесь появится результат ✨
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
