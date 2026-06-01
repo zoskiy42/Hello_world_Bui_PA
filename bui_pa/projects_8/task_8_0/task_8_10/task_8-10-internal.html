@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal-стили</title>
+    <style>
+        h1 {
+            color: #2c3e50;
+            background-color: #ecf0f1;
+            font-size: 32px;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        p:first-of-type {
+            color: #555;
+            background-color: #fff;
+            font-size: 18px;
+            border-left: 4px solid #3498db;
+        }
+        p:nth-of-type(2) {
+            color: #e74c3c;
+            background-color: #f9ebea;
+            font-size: 16px;
+            border: 1px solid #e74c3c;
+            text-align: justify;
+        }
+        p:nth-of-type(3) {
+            color: #27ae60;
+            background-color: #eafaf1;
+            font-size: 17px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+        }
+        ul {
+            color: #2980b9;
+            background-color: #e8f8f5;
+            font-size: 16px;
+            padding: 20px;
+            margin: 10px 0;
+            border: 2px solid #2980b9;
+            list-style-type: square;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Пример страницы с internal-стилями</h1>
+
+    <p>Первый параграф. Internal-стили легче поддерживать, они разделяют содержимое и оформление.</p>
+
+    <p>Второй параграф. Здесь сохранены все стили из inline-версии, но применены через селекторы тегов.</p>
+
+    <p>Третий параграф. Моноширинный шрифт, зелёный текст и скруглённые углы.</p>
+
+    <ul>
+        <li>Первый пункт списка</li>
+        <li>Второй пункт списка</li>
+        <li>Третий пункт списка</li>
+    </ul>
+
+    <p><a href="#">Пример ссылки</a> — наведи мышку, чтобы увидеть эффект hover.</p>
+
+</body>
+</html>

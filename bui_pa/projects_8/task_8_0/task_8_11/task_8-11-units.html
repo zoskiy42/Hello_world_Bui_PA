@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Эксперимент с единицами измерения</title>
+    <style>
+        /* Базовый размер шрифта для эксперимента с em/rem */
+        html {
+            font-size: 20px;  /* меняем базовый шрифт — повлияет на em и rem */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        /* Общие стили для всех блоков */
+        .box {
+            border: 1px solid #4caf50;
+            padding: 12px;
+            margin-bottom: 10px;
+            background-color: #fafaf7;
+            box-sizing: border-box;
+        }
+
+        /* Разные единицы измерения ширины */
+        .size-px {
+            width: 200px;
+        }
+
+        .size-em {
+            width: 15em;    /* относительно font-size текущего элемента или родителя */
+        }
+
+        .size-rem {
+            width: 12rem;   /* относительно font-size корневого элемента (html) */
+        }
+
+        .size-percent {
+            width: 50%;     /* относительно родительского контейнера (body) */
+        }
+
+        .size-vw {
+            width: 30vw;    /* 30% от ширины окна браузера */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Единицы измерения в CSS</h1>
+    <p>Измени размер окна браузера и посмотри, как ведут себя блоки. А также попробуй поменять <code>html { font-size }</code> в стилях.</p>
+
+    <div class="box size-px">Блок 1 — width: 200px (фиксированная ширина)</div>
+    <div class="box size-em">Блок 2 — width: 15em (зависит от шрифта элемента)</div>
+    <div class="box size-rem">Блок 3 — width: 12rem (зависит от шрифта корневого элемента html)</div>
+    <div class="box size-percent">Блок 4 — width: 50% (от ширины родителя)</div>
+    <div class="box size-vw">Блок 5 — width: 30vw (от ширины окна браузера)</div>
+
+</body>
+</html>

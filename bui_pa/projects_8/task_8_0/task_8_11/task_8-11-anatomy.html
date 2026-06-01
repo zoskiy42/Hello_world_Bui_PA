@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анатомия CSS-правил</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #1a1a2e;
+            margin: 20px;
+            padding: 15px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #0f3460;          /* цвет заголовка */
+            text-align: center;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 12px;
+            font-size: 2.2em;
+        }
+
+        /* Стили для всех заголовков второго уровня */
+        h2 {
+            font-family: 'Georgia', serif;
+            font-weight: 600;
+            color: #533483;
+            background-color: #e8eaf6;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        /* Оформление параграфов: 
+           фон, отступы и межстрочный интервал */
+        p {
+            background: #ffffff;
+            padding: 15px 18px;
+            margin: 15px 0;
+            border-left: 5px solid #e94560;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            font-size: 1.05em;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #e94560;
+            font-weight: bold;
+            background-color: #fff0f2;
+            padding: 8px 16px;
+            border-radius: 30px;
+            transition: 0.2s ease;
+        }
+
+        a:hover {
+            background-color: #e94560;
+            color: white;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Анатомия CSS-правил</h1>
+
+    <h2>Введение</h2>
+    <p>CSS (Cascading Style Sheets) позволяет отделить содержимое от оформления. Каждое правило состоит из селектора и блока объявлений в фигурных скобках.</p>
+
+    <h2>Блочная модель и наследование</h2>
+    <p>Селекторы могут быть по тегу, классу, id или атрибуту. Комментарии в CSS полезны для пояснения сложных моментов.</p>
+    <p>На этой странице мы используем только селекторы по тегам: <code>body</code>, <code>h1</code>, <code>h2</code>, <code>p</code>, <code>a</code>. Каждое правило содержит минимум три свойства.</p>
+
+    <a href="#">Пример ссылки — наведи курсор</a>
+
+</body>
+</html>

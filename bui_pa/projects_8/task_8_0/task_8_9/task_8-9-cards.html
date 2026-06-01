@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточки с приоритетами</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 16px;
+            margin: 16px 0;
+            background-color: #fff;
+            transition: box-shadow 0.2s ease;
+        }
+        .priority-high {
+            border-left: 6px solid #e74c3c;
+        }
+        .priority-medium {
+            border-left: 6px solid #f39c12;
+        }
+        .priority-low {
+            border-left: 6px solid #2ecc71;
+        }
+        .featured {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background-color: #fef9e6;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Список задач</h1>
+
+    <div class="card priority-high featured">
+        <h3>Срочный баг на продакшене</h3>
+        <p>Исправить ошибку в авторизации пользователей. Задача критическая, требует немедленного решения.</p>
+    </div>
+
+    <div class="card priority-high">
+        <h3>Обновить зависимости проекта</h3>
+        <p>Обновить npm-пакеты до актуальных версий, проверить совместимость.</p>
+    </div>
+
+    <div class="card priority-medium">
+        <h3>Написать документацию к API</h3>
+        <p>Создать описание всех эндпоинтов и примеры запросов для разработчиков.</p>
+    </div>
+
+    <div class="card priority-medium">
+        <h3>Провести код-ревью пул-реквестов</h3>
+        <p>Проверить 3 открытых PR от коллег, оставить комментарии и предложения по улучшению.</p>
+    </div>
+
+    <div class="card priority-low">
+        <h3>Оптимизировать изображения на сайте</h3>
+        <p>Сжать все картинки на главной странице без потери качества для ускорения загрузки.</p>
+    </div>
+
+    <div class="card priority-low">
+        <h3>Изучить новую библиотеку</h3>
+        <p>Посмотреть документацию и туториалы по React Query, сделать тестовый проект.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Одностраничник с якорями</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        nav {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #about {
+            background: #e0efff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        #projects {
+            background: #e0ffe0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        #contacts {
+            background: #ffe0e0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>Обо мне</h2>
+        <p>Меня зовут Павел. Я веб-разработчик с более чем 2-летним опытом стояния мида в популярной онлайн стратегии жанра моба - Dota 2.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Проекты</h2>
+        <p>Участвовала в разработке комбинированных сетапов на Рубике.</p>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Связаться с топ 1 коучем мира по Dota 2 можно по почте: <a href="mailto:gpashabui@gmail.com">gpashabui@gmail.com</a> или в Telegram: <a href="https://t.me/justpizdes">@justzdes</a>.</p>
+    </section>
+
+</body>
+</html>
